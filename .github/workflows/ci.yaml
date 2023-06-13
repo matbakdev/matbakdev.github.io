@@ -12,9 +12,11 @@ jobs:
         with:
           ruby-version: 2.7
           bundler-cache: true
-      - name: permissions
-        run: chmod +x script
+      - name: permbs
+        run: chmod +x script/bootstrap
       - name: build
         run: script/bootstrap
+      - name: permtest
+        run: chmod +x script/cibuild        
       - name: test
         run: script/cibuild
