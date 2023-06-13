@@ -13,7 +13,7 @@ jobs:
           ruby-version: 2.7
           bundler-cache: true
       - name: permissions
-        run: chmod +x script/bootstrap
+        run: chmod +x script
       - name: build
         run: script/bootstrap
       - name: test
